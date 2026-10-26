@@ -1,0 +1,207 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>口语社交 - 语伴聊天室</title>
+    <link rel="stylesheet" href="./styles.css" />
+    <script src="./nav.js" defer></script>
+  </head>
+  <body>
+    <main class="stage">
+      <section class="phone" aria-label="语伴聊天室">
+        <header class="topbar">
+          <div class="status">
+            <div class="status-left">10:25</div>
+            <div class="status-right">
+              <span class="pill">5G</span>
+              <span class="pill">82%</span>
+            </div>
+          </div>
+          <div class="brand">
+            <a class="back-btn" href="./partner-matching.html" aria-label="返回匹配页">
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="none">
+                <path d="M15 6 9 12l6 6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+            </a>
+            <div class="brand-text">
+              <div class="brand-title">语伴聊天室</div>
+              <div class="brand-subtitle">实时语音 / 文字对话，练习口语表达</div>
+            </div>
+            <button class="icon-btn" type="button" aria-label="更多">
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="none">
+                <path d="M6 12h.01M12 12h.01M18 12h.01" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" />
+              </svg>
+            </button>
+          </div>
+          <nav class="tabs">
+            <a class="tab" href="./partner-matching.html">匹配广场</a>
+            <a class="tab active" href="./partner-chatroom.html">聊天室</a>
+            <a class="tab" href="./checkin.html">打卡</a>
+          </nav>
+        </header>
+        <section class="content">
+          <article class="hero">
+            <div class="hero-bg" aria-hidden="true"></div>
+            <div class="hero-body">
+              <div class="hero-title">房间：职场会议模拟</div>
+              <div class="hero-subtitle">语伴：Lena 在线 · AI 助教实时纠错已开启</div>
+              <button class="cta" type="button">开始语音对话</button>
+            </div>
+          </article>
+
+          <section class="cards">
+            <article class="card">
+              <div class="card-hd">
+                <div class="card-title">会话目标</div>
+                <div class="tags">
+                  <span class="tag">20 分钟</span>
+                  <span class="tag ghost">进行中</span>
+                </div>
+              </div>
+              <div class="list">
+                <div class="list-item">
+                  <div class="li-main">目标 1：清晰汇报任务进度和风险</div>
+                  <div class="li-sub">重点：使用 first, then, finally 组织结构</div>
+                </div>
+                <div class="list-item">
+                  <div class="li-main">目标 2：针对追问快速澄清</div>
+                  <div class="li-sub">重点：礼貌打断 + 复述确认 + 给出结论</div>
+                </div>
+                <div class="list-item">
+                  <div class="li-main">目标 3：会后行动项确认</div>
+                  <div class="li-sub">重点：时间、责任人、交付结果表达清楚</div>
+                </div>
+              </div>
+            </article>
+
+            <article class="card">
+              <div class="card-hd">
+                <div class="card-title">实时对话流</div>
+                <div class="tags">
+                  <span class="tag">双语字幕</span>
+                  <span class="tag ghost">自动保存</span>
+                </div>
+              </div>
+              <div class="comment">
+                <div class="avatar sm" aria-hidden="true"></div>
+                <div class="c-body">
+                  <div class="c-top">
+                    <div class="c-name">Lena</div>
+                    <div class="c-time">10:25:12</div>
+                  </div>
+                  <div class="c-text">Could you walk me through your project status in three key points?</div>
+                  <div class="c-actions">
+                    <a class="ghost-btn" href="#">收藏句子</a>
+                    <a class="ghost-btn" href="#">跟读</a>
+                  </div>
+                </div>
+              </div>
+              <div class="comment" style="margin-top:10px;">
+                <div class="avatar sm" aria-hidden="true"></div>
+                <div class="c-body">
+                  <div class="c-top">
+                    <div class="c-name">我</div>
+                    <div class="c-time">10:25:26</div>
+                  </div>
+                  <div class="c-text">Sure. First, we completed the user research. Then, we built the prototype. Finally, we are running usability tests this week.</div>
+                  <div class="c-actions">
+                    <a class="ghost-btn" href="#">查看评分</a>
+                    <a class="ghost-btn danger" href="#">重说一句</a>
+                  </div>
+                </div>
+              </div>
+              <div class="comment" style="margin-top:10px;">
+                <div class="avatar sm" aria-hidden="true"></div>
+                <div class="c-body">
+                  <div class="c-top">
+                    <div class="c-name">AI 助教</div>
+                    <div class="c-time">10:25:30</div>
+                  </div>
+                  <div class="c-text">表达结构很清晰。建议将 “are running” 换成 “have been running” 以突出持续性。</div>
+                  <div class="c-actions">
+                    <a class="ghost-btn" href="#">应用建议</a>
+                    <a class="ghost-btn" href="#">示例替换</a>
+                  </div>
+                </div>
+              </div>
+            </article>
+
+            <article class="card">
+              <div class="card-hd">
+                <div class="card-title">纠错面板</div>
+                <div class="tags">
+                  <span class="tag">即时</span>
+                  <span class="tag ghost">可忽略</span>
+                </div>
+              </div>
+              <div class="list">
+                <div class="list-item">
+                  <div class="li-main">语法提醒：时态连续性</div>
+                  <div class="li-sub">建议：we have been running usability tests this week.</div>
+                </div>
+                <div class="list-item">
+                  <div class="li-main">发音提醒：prototype</div>
+                  <div class="li-sub">建议：重音在第一音节 /ˈproʊtətaɪp/</div>
+                </div>
+                <div class="list-item">
+                  <div class="li-main">表达升级：walk me through</div>
+                  <div class="li-sub">可替换：give me a brief overview of ...</div>
+                </div>
+                <div class="list-item">
+                  <div class="li-main">语气优化：确认动作项</div>
+                  <div class="li-sub">建议句式：To make sure we are aligned, ...</div>
+                </div>
+              </div>
+            </article>
+
+            <article class="card grid2">
+              <div class="mini-card">
+                <div class="mini-title">会话时长</div>
+                <div class="mini-sub">已练习 11 分钟 23 秒</div>
+                <div class="mini-chip">继续对话</div>
+              </div>
+              <div class="mini-card alt">
+                <div class="mini-title">轮次统计</div>
+                <div class="mini-sub">我发言 14 次 · 语伴发言 13 次</div>
+                <div class="mini-chip">均衡良好</div>
+              </div>
+              <div class="mini-card">
+                <div class="mini-title">常用词包</div>
+                <div class="mini-sub">新增 9 个会议高频短语</div>
+                <div class="mini-chip">加入生词本</div>
+              </div>
+              <div class="mini-card alt">
+                <div class="mini-title">会后复盘</div>
+                <div class="mini-sub">自动生成文字纪要与改进清单</div>
+                <div class="mini-chip">结束并导出</div>
+              </div>
+            </article>
+
+            <article class="card">
+              <div class="card-hd">
+                <div class="card-title">快捷表达卡片</div>
+                <div class="tags">
+                  <span class="tag">场景短语</span>
+                  <span class="tag ghost">可复制</span>
+                </div>
+              </div>
+              <div class="list">
+                <div class="list-item"><div class="li-main">Let me clarify one point before we move on.</div><div class="li-sub">在追问时先澄清，再进入回答。</div></div>
+                <div class="list-item"><div class="li-main">From my perspective, the key issue is ...</div><div class="li-sub">表达观点时先给结论，提升逻辑清晰度。</div></div>
+                <div class="list-item"><div class="li-main">To make sure we are aligned, I'll summarize.</div><div class="li-sub">会后总结和确认行动项常用句式。</div></div>
+              </div>
+            </article>
+          </section>
+        </section>
+        <footer class="nav">
+          <a class="nav-item" href="./speaking-home.html"><span class="nav-ic"></span><span>练习</span></a>
+          <a class="nav-item active" href="./partner-chatroom.html"><span class="nav-ic"></span><span>语伴</span></a>
+          <a class="nav-item" href="./checkin.html"><span class="nav-ic"></span><span>打卡</span></a>
+          <a class="nav-item" href="./speaking-pk.html"><span class="nav-ic"></span><span>PK</span></a>
+          <a class="nav-item" href="./homework-submit.html"><span class="nav-ic"></span><span>作业</span></a>
+        </footer>
+      </section>
+    </main>
+  </body>
+</html>

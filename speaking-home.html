@@ -1,0 +1,242 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>口语社交 - 口语练习首页</title>
+    <link rel="stylesheet" href="./styles.css" />
+    <script src="./nav.js" defer></script>
+  </head>
+  <body>
+    <main class="stage">
+      <section class="phone" aria-label="口语练习首页">
+        <header class="topbar">
+          <div class="status">
+            <div class="status-left">10:22</div>
+            <div class="status-right">
+              <span class="pill">5G</span>
+              <span class="pill">88%</span>
+            </div>
+          </div>
+          <div class="brand">
+            <a class="back-btn" href="./index.html" aria-label="返回首页">
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="none">
+                <path d="M15 6 9 12l6 6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+            </a>
+            <div class="brand-text">
+              <div class="brand-title">口语练习首页</div>
+              <div class="brand-subtitle">按场景定制练习计划 · 日常 / 考试 / 职场 / 留学</div>
+            </div>
+            <button class="icon-btn" type="button" aria-label="通知">
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="none">
+                <path d="M7.5 9.5c0-2.761 2.015-5 4.5-5s4.5 2.239 4.5 5v3.3l1.1 1.4c.6.8.05 1.8-.95 1.8H7.85c-1 0-1.55-1-.95-1.8l1.1-1.4V9.5Z" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M10 18.2c.3 1.1 1.1 1.8 2 1.8s1.7-.7 2-1.8" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" />
+              </svg>
+            </button>
+          </div>
+          <div class="search-wrap">
+            <div class="search">
+              <svg class="search-ic" viewBox="0 0 24 24" width="18" height="18" fill="none">
+                <path d="M10.5 18a7.5 7.5 0 1 1 0-15 7.5 7.5 0 0 1 0 15Z" stroke="currentColor" stroke-width="1.6" />
+                <path d="M16.5 16.5 21 21" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" />
+              </svg>
+              <input class="search-input" type="text" placeholder="搜索练习场景、课程、语伴活动" />
+            </div>
+            <div class="chips">
+              <button class="chip" type="button"><span class="dot blue"></span>日常交流</button>
+              <button class="chip" type="button"><span class="dot"></span>考试冲刺</button>
+              <button class="chip icon" type="button" aria-label="筛选">
+                <svg viewBox="0 0 24 24" width="18" height="18" fill="none">
+                  <path d="M4 6h16M7 12h10M10 18h4" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" />
+                </svg>
+              </button>
+            </div>
+          </div>
+          <nav class="tabs" aria-label="口语社交导航">
+            <a class="tab active" href="./speaking-home.html">练习首页</a>
+            <a class="tab" href="./shadowing.html">跟读页</a>
+            <a class="tab" href="./partner-matching.html">语伴匹配</a>
+          </nav>
+        </header>
+        <section class="content">
+          <article class="hero">
+            <div class="hero-bg" aria-hidden="true"></div>
+            <div class="hero-body">
+              <div class="hero-title">AI 智能口语计划</div>
+              <div class="hero-subtitle">基于你的目标、时间和弱项，每日自动生成可执行任务</div>
+              <a class="cta" href="./shadowing.html">开始今天的第一练</a>
+            </div>
+          </article>
+
+          <section class="actions" aria-label="快捷入口">
+            <a class="action" href="./shadowing.html">
+              <span class="action-ic ai">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M5 9a3 3 0 0 1 3-3h8a3 3 0 0 1 3 3v4a3 3 0 0 1-3 3h-4l-3.5 2V16H8a3 3 0 0 1-3-3Z" />
+                  <path d="M9.5 11.5h5M9.5 9.5h2.5" />
+                </svg>
+              </span>
+              <span class="action-txt">AI 跟读</span>
+            </a>
+            <a class="action" href="./partner-chatroom.html">
+              <span class="action-ic chat">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M4 8.5a3.5 3.5 0 0 1 3.5-3.5h5A3.5 3.5 0 0 1 16 8.5v2A3.5 3.5 0 0 1 12.5 14H9l-3 2v-2A3.5 3.5 0 0 1 4 10.5Z" />
+                  <path d="M13 9.5h3.5A3.5 3.5 0 0 1 20 13v1.5A3.5 3.5 0 0 1 16.5 18H15l-2.5 1.7V18" />
+                </svg>
+              </span>
+              <span class="action-txt">语伴聊天</span>
+            </a>
+            <a class="action" href="./checkin.html">
+              <span class="action-ic checkin">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M7 4h10a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2Z" />
+                  <path d="M9 3v3M15 3v3M8.5 12l2.2 2.2L15.5 9.5" />
+                </svg>
+              </span>
+              <span class="action-txt">每日打卡</span>
+            </a>
+            <a class="action" href="./speaking-pk.html">
+              <span class="action-ic pk">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="m8 5 3 7H7l3 7M16 5l-3 7h4l-3 7" />
+                </svg>
+              </span>
+              <span class="action-txt">口语 PK</span>
+            </a>
+          </section>
+
+          <section class="cards">
+            <article class="card">
+              <div class="card-hd">
+                <div class="card-title">我的本周目标</div>
+                <div class="tags">
+                  <span class="tag">目标</span>
+                  <span class="tag ghost">可调整</span>
+                </div>
+              </div>
+              <div class="card-row">
+                <div class="meta">
+                  <div class="meta-main">连续练习 5 天 · 每天 25 分钟 · 覆盖 3 个场景</div>
+                  <div class="meta-sub">已完成 3/5 天，整体进度 61%</div>
+                </div>
+                <button class="mini-btn" type="button">管理计划</button>
+              </div>
+              <div class="bar"><span style="width:61%"></span></div>
+            </article>
+
+            <article class="card">
+              <div class="card-hd">
+                <div class="card-title">今日推荐场景</div>
+                <div class="tags">
+                  <span class="tag">个性化</span>
+                  <span class="tag ghost">3 组</span>
+                </div>
+              </div>
+              <div class="list">
+                <a class="list-item" href="./shadowing.html">
+                  <div class="li-main">日常：餐厅点单与偏好表达</div>
+                  <div class="li-sub">目标：礼貌表达 + 需求补充 · 预计 8 分钟</div>
+                </a>
+                <a class="list-item" href="./shadowing.html">
+                  <div class="li-main">考试：雅思 Part2 观点扩展</div>
+                  <div class="li-sub">目标：2 分钟连贯输出 · 预计 12 分钟</div>
+                </a>
+                <a class="list-item" href="./shadowing.html">
+                  <div class="li-main">职场：晨会进度汇报与问题同步</div>
+                  <div class="li-sub">目标：结构化表达 + 追问应对 · 预计 10 分钟</div>
+                </a>
+                <a class="list-item" href="./shadowing.html">
+                  <div class="li-main">留学：课堂发言与 Office Hour 提问</div>
+                  <div class="li-sub">目标：学术语气 + 澄清提问 · 预计 9 分钟</div>
+                </a>
+              </div>
+            </article>
+
+            <article class="card">
+              <div class="card-hd">
+                <div class="card-title">练习计划日历</div>
+                <div class="tags">
+                  <span class="tag">自动排程</span>
+                  <span class="tag ghost">今日已排</span>
+                </div>
+              </div>
+              <div class="grid2">
+                <div class="mini-card">
+                  <div class="mini-title">06:30-06:45</div>
+                  <div class="mini-sub">发音热身：连读 / 弱读 / 重音节奏</div>
+                  <div class="mini-chip">已完成</div>
+                </div>
+                <div class="mini-card alt">
+                  <div class="mini-title">12:30-12:45</div>
+                  <div class="mini-sub">午间快练：酒店入住沟通</div>
+                  <div class="mini-chip">进行中</div>
+                </div>
+                <div class="mini-card">
+                  <div class="mini-title">19:30-19:50</div>
+                  <div class="mini-sub">语伴对话：面试问答模拟</div>
+                  <div class="mini-chip">待开始</div>
+                </div>
+                <div class="mini-card alt">
+                  <div class="mini-title">22:00-22:10</div>
+                  <div class="mini-sub">复盘：AI 纠错 + 重点词包</div>
+                  <div class="mini-chip">待开始</div>
+                </div>
+              </div>
+            </article>
+
+            <article class="card">
+              <div class="card-hd">
+                <div class="card-title">学习提醒</div>
+                <div class="tags">
+                  <span class="tag">贴士</span>
+                  <span class="tag ghost">可关闭</span>
+                </div>
+              </div>
+              <div class="ugc">
+                <div class="avatar coach" aria-hidden="true">
+                  <svg viewBox="0 0 24 24">
+                    <path d="M12 3v4M6.8 7.2l2.8 2.8M17.2 7.2 14.4 10M5 13h3m8 0h3" />
+                    <path d="M8.5 14.5a3.5 3.5 0 0 1 7 0v1.2c0 1.9-1.6 3.5-3.5 3.5s-3.5-1.6-3.5-3.5Z" />
+                  </svg>
+                </div>
+                <div class="ugc-body">
+                  <div class="meta-main">今天的弱项是“语调平直”，建议先做 5 句情绪句跟读</div>
+                  <div class="meta-sub">来自 AI 教练 · 推荐优先级高</div>
+                </div>
+              </div>
+              <div class="feed-actions">
+                <a class="ghost-btn" href="./shadowing.html">马上练习</a>
+                <a class="ghost-btn" href="./homework-submit.html">查看错因报告</a>
+                <a class="ghost-btn danger" href="#">稍后提醒</a>
+              </div>
+            </article>
+          </section>
+        </section>
+        <footer class="nav">
+          <a class="nav-item active" href="./speaking-home.html">
+            <span class="nav-ic"></span>
+            <span>练习</span>
+          </a>
+          <a class="nav-item" href="./partner-matching.html">
+            <span class="nav-ic"></span>
+            <span>语伴</span>
+          </a>
+          <a class="nav-item" href="./checkin.html">
+            <span class="nav-ic"></span>
+            <span>打卡</span>
+          </a>
+          <a class="nav-item" href="./speaking-pk.html">
+            <span class="nav-ic"></span>
+            <span>PK</span>
+          </a>
+          <a class="nav-item" href="./homework-submit.html">
+            <span class="nav-ic"></span>
+            <span>作业</span>
+          </a>
+        </footer>
+      </section>
+    </main>
+  </body>
+</html>

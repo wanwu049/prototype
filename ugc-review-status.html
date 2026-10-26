@@ -1,0 +1,206 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>英圈刷题 - UGC审核状态页</title>
+    <link rel="stylesheet" href="./styles.css" />
+    <script src="./nav.js" defer></script>
+  </head>
+  <body>
+    <main class="stage">
+      <section class="phone" aria-label="UGC审核状态页">
+        <header class="topbar">
+          <div class="status">
+            <div class="status-left">10:01</div>
+            <div class="status-right"><span class="pill">5G</span><span class="pill">90%</span></div>
+          </div>
+          <div class="brand">
+            <a class="back-btn" href="./ugc-edit.html" aria-label="返回">
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="none">
+                <path d="M15 6 9 12l6 6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+            </a>
+            <div class="brand-text">
+              <div class="brand-title">UGC 审核状态页</div>
+              <div class="brand-subtitle">查看审核进度、审核结果、修改建议</div>
+            </div>
+          </div>
+        </header>
+
+        <section class="content" aria-label="审核进度列表">
+          <article class="card">
+            <div class="card-hd">
+              <div class="card-title">当前审核进度</div>
+              <div class="tags"><span class="tag">审核中</span></div>
+            </div>
+            <div class="meta-sub mt-8">提交时间：今天 09:42 · 预计 10-30 分钟内完成</div>
+            <div class="bar"><span class="progress-68"></span></div>
+          </article>
+
+          <section class="cards" aria-label="审核记录">
+            <article class="card">
+              <div class="card-hd">
+                <div class="card-title">《四六级翻译提分：错题复盘模板》</div>
+                <div class="tags"><span class="tag ghost">待终审</span></div>
+              </div>
+              <div class="meta-sub">系统初审已通过，进入人工抽检。</div>
+            </article>
+
+            <article class="card">
+              <div class="card-hd">
+                <div class="card-title">《口语影子跟读：一周打卡计划》</div>
+                <div class="tags"><span class="tag">需修改</span></div>
+              </div>
+              <div class="meta-sub">建议补充来源说明，避免引用素材信息不完整。</div>
+              <div class="detail-cta">
+                <a class="ghost-btn" href="./ugc-edit.html">去修改</a>
+                <a class="ghost-btn" href="#">查看详情</a>
+              </div>
+            </article>
+          </section>
+
+          <section class="panel mt-12" aria-label="审核时间线">
+            <div class="panel-title">审核时间线</div>
+            <div class="list">
+              <a class="list-item" href="#">
+                <div class="li-main">09:42 提交成功</div>
+                <div class="li-sub">系统已接收稿件，正在进入预处理队列</div>
+              </a>
+              <a class="list-item" href="#">
+                <div class="li-main">09:45 机器初审完成</div>
+                <div class="li-sub">通过敏感词、结构完整性、画面清晰度检测</div>
+              </a>
+              <a class="list-item" href="#">
+                <div class="li-main">09:51 人工抽检开始</div>
+                <div class="li-sub">重点核查引用来源、事实准确性和表达规范</div>
+              </a>
+              <a class="list-item" href="#">
+                <div class="li-main">预计 10:08 出具终审结果</div>
+                <div class="li-sub">若需修改将同步返回明确建议清单</div>
+              </a>
+            </div>
+          </section>
+
+          <section class="cards" aria-label="状态概览">
+            <article class="card grid2">
+              <div class="mini-card">
+                <div class="mini-title">待审核</div>
+                <div class="mini-sub">2 篇</div>
+                <div class="mini-chip">查看队列</div>
+              </div>
+              <div class="mini-card alt">
+                <div class="mini-title">需修改</div>
+                <div class="mini-sub">1 篇</div>
+                <div class="mini-chip price">立即处理</div>
+              </div>
+            </article>
+
+            <article class="card grid2">
+              <div class="mini-card">
+                <div class="mini-title">已通过</div>
+                <div class="mini-sub">39 篇</div>
+                <div class="mini-chip">查看内容</div>
+              </div>
+              <div class="mini-card alt">
+                <div class="mini-title">本周通过率</div>
+                <div class="mini-sub">92%</div>
+                <div class="mini-chip price">继续保持</div>
+              </div>
+            </article>
+          </section>
+
+          <section class="panel mt-12" aria-label="修改建议池">
+            <div class="panel-title">修改建议池</div>
+            <div class="list">
+              <a class="list-item" href="./ugc-edit.html">
+                <div class="li-main">补充真题来源与年份标记</div>
+                <div class="li-sub">适用于：翻译、阅读技巧类内容</div>
+              </a>
+              <a class="list-item" href="./ugc-edit.html">
+                <div class="li-main">减少标题中的夸张承诺表达</div>
+                <div class="li-sub">建议：改为可验证结果描述</div>
+              </a>
+              <a class="list-item" href="./ugc-edit.html">
+                <div class="li-main">视频字幕增加停顿与重音标记</div>
+                <div class="li-sub">提升可读性，降低误解风险</div>
+              </a>
+              <a class="list-item" href="./ugc-edit.html">
+                <div class="li-main">封面图增加核心知识点关键词</div>
+                <div class="li-sub">建议在左下角添加 6~8 字摘要</div>
+              </a>
+              <a class="list-item" href="./ugc-edit.html">
+                <div class="li-main">结尾增加复盘行动指令</div>
+                <div class="li-sub">示例：今天完成 1 套并记录 3 个错因</div>
+              </a>
+            </div>
+          </section>
+
+          <section class="cards" aria-label="审核结果历史">
+            <article class="card">
+              <div class="card-hd">
+                <div class="card-title">最近 7 次审核结果</div>
+                <div class="tags"><span class="tag">历史</span></div>
+              </div>
+              <div class="list">
+                <a class="list-item" href="#">
+                  <div class="li-main">04-17 《翻译错题复盘模板》</div>
+                  <div class="li-sub">状态：审核中</div>
+                </a>
+                <a class="list-item" href="#">
+                  <div class="li-main">04-16 《阅读定位三步法》</div>
+                  <div class="li-sub">状态：已通过 · 3.2k 展现</div>
+                </a>
+                <a class="list-item" href="#">
+                  <div class="li-main">04-14 《口语高频替换词》</div>
+                  <div class="li-sub">状态：需修改 · 已二次提交</div>
+                </a>
+                <a class="list-item" href="#">
+                  <div class="li-main">04-12 《作文模板万能句》</div>
+                  <div class="li-sub">状态：已通过 · 2.4k 展现</div>
+                </a>
+                <a class="list-item" href="#">
+                  <div class="li-main">04-10 《听力场景词汇表》</div>
+                  <div class="li-sub">状态：已通过 · 1.7k 展现</div>
+                </a>
+              </div>
+            </article>
+          </section>
+
+          <section class="panel mt-12" aria-label="快捷操作">
+            <div class="panel-title">快捷操作</div>
+            <div class="feed-actions">
+              <a class="ghost-btn" href="./ugc-edit.html">继续修改</a>
+              <a class="ghost-btn" href="./ugc-publish.html">新建发布</a>
+              <a class="ghost-btn" href="./ugc-profile.html">查看主页</a>
+              <a class="ghost-btn" href="./creator-center.html">创作者中心</a>
+            </div>
+          </section>
+
+          <section class="cards" aria-label="审核说明">
+            <article class="card">
+              <div class="card-hd">
+                <div class="card-title">审核说明</div>
+                <div class="tags"><span class="tag ghost">帮助</span></div>
+              </div>
+              <div class="list">
+                <a class="list-item" href="#">
+                  <div class="li-main">平台按“内容质量 + 规范性”综合判断审核结果</div>
+                  <div class="li-sub">建议优先修复系统标注的高优先级问题</div>
+                </a>
+                <a class="list-item" href="#">
+                  <div class="li-main">多次快速提交同一稿件可能延长审核排队时间</div>
+                  <div class="li-sub">建议集中修改后再统一提交</div>
+                </a>
+                <a class="list-item" href="#">
+                  <div class="li-main">若对结果有疑问，可在 24 小时内发起申诉</div>
+                  <div class="li-sub">申诉入口在“查看详情”中提供</div>
+                </a>
+              </div>
+            </article>
+          </section>
+        </section>
+      </section>
+    </main>
+  </body>
+</html>

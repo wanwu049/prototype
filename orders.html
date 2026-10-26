@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>英圈刷题 - 订单列表页（交易服务）</title>
+    <link rel="stylesheet" href="./styles.css" />
+    <script src="./nav.js" defer></script>
+  </head>
+  <body>
+    <main class="stage">
+      <section class="phone app" data-page="orders" aria-label="WeChat Mini Program Prototype">
+        <header class="topbar app-header">
+          <div class="status">
+            <div class="status-left">10:01</div>
+            <div class="status-right"><span class="pill">5G</span><span class="pill">90%</span></div>
+          </div>
+          <div class="brand">
+            <a class="back-btn" href="./mall.html" aria-label="返回商城">
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="none">
+                <path d="M15 6 9 12l6 6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+            </a>
+            <div class="brand-text">
+              <div class="brand-title">订单列表</div>
+              <div class="brand-subtitle">订单状态 · 服务进度 · 售后</div>
+            </div>
+            <a class="icon-btn" href="./after-sales.html" aria-label="售后">
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="none">
+                <path d="M12 21a8 8 0 1 0-8-8" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" />
+                <path d="M4 13v-2a2 2 0 0 1 2-2h1" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" />
+                <path d="M20 13v-2a2 2 0 0 0-2-2h-1" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" />
+                <path d="M4 17h4v2H6a2 2 0 0 1-2-2Z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round" />
+              </svg>
+            </a>
+          </div>
+
+          <div class="filters" aria-label="订单筛选">
+            <a class="chip2 active" href="#">全部</a>
+            <a class="chip2" href="#">待支付</a>
+            <a class="chip2" href="#">已完成</a>
+            <a class="chip2" href="#">退款/售后</a>
+          </div>
+        </header>
+
+        <section class="content app-content" aria-label="页面内容">
+          <article class="card">
+            <div class="card-hd">
+              <div class="card-title">订单：20260417-001</div>
+              <div class="tags"><span class="tag ghost">待支付</span></div>
+            </div>
+            <div class="list">
+              <a class="list-item" href="./product-detail.html">
+                <div class="thumb" aria-hidden="true"></div>
+                <div class="li-text">
+                  <div class="li-main">四级阅读技巧课（4讲）</div>
+                  <div class="li-sub">数字内容 · 即时开通</div>
+                </div>
+                <div class="li-right"><span class="badge red">¥19.9</span><span class="badge">x1</span></div>
+              </a>
+              <a class="list-item" href="./vip-center.html">
+                <div class="thumb" aria-hidden="true" style="background:linear-gradient(135deg, rgba(124,58,237,.65), rgba(47,214,255,.42));"></div>
+                <div class="li-text">
+                  <div class="li-main">英圈会员（月卡）</div>
+                  <div class="li-sub">权限开通 · 30 天</div>
+                </div>
+                <div class="li-right"><span class="badge red">¥29.9</span><span class="badge">x1</span></div>
+              </a>
+            </div>
+            <div class="divider"></div>
+            <div class="row">
+              <div class="price red">应付：¥44.8</div>
+              <div style="display:flex; gap:10px; flex-wrap:wrap; justify-content:flex-end;">
+                <a class="mini-btn" href="./after-sales.html">取消/售后</a>
+                <a class="mini-btn primary" href="./pay.html">去支付</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="card-hd">
+              <div class="card-title">订单：20260410-128</div>
+              <div class="tags"><span class="tag">已完成</span></div>
+            </div>
+            <div class="list">
+              <a class="list-item" href="./product-detail.html">
+                <div class="thumb" aria-hidden="true" style="background:linear-gradient(135deg, rgba(245,158,11,.55), rgba(47,214,255,.42));"></div>
+                <div class="li-text">
+                  <div class="li-main">四级冲刺套卷（5套）</div>
+                  <div class="li-sub">已开通 · 可在刷题中使用</div>
+                </div>
+                <div class="li-right"><span class="badge red">¥9.9</span><span class="badge green">已开通</span></div>
+              </a>
+            </div>
+            <div class="divider"></div>
+            <div class="row">
+              <a class="mini-btn" href="./practice-home.html">去刷题</a>
+              <a class="mini-btn" href="./after-sales.html">申请售后</a>
+            </div>
+          </article>
+        </section>
+
+        <footer class="nav app-footer" aria-label="底部导航">
+          <a class="nav-item" href="./discover.html"><span class="nav-ic" aria-hidden="true"></span><span>首页</span></a>
+          <a class="nav-item" href="./practice-home.html"><span class="nav-ic" aria-hidden="true"></span><span>刷题</span></a>
+          <a class="nav-item" href="./community.html"><span class="nav-ic" aria-hidden="true"></span><span>社区</span></a>
+          <a class="nav-item active" href="./mall.html"><span class="nav-ic" aria-hidden="true"></span><span>商城</span></a>
+          <a class="nav-item" href="./me.html"><span class="nav-ic" aria-hidden="true"></span><span>我的</span></a>
+        </footer>
+      </section>
+    </main>
+  </body>
+</html>
+

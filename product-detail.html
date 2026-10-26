@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>英圈刷题 - 商品详情页（交易服务）</title>
+    <link rel="stylesheet" href="./styles.css" />
+    <script src="./nav.js" defer></script>
+  </head>
+  <body>
+    <main class="stage">
+      <section class="phone app" data-page="product-detail" aria-label="WeChat Mini Program Prototype">
+        <header class="topbar app-header">
+          <div class="status">
+            <div class="status-left">10:01</div>
+            <div class="status-right"><span class="pill">5G</span><span class="pill">90%</span></div>
+          </div>
+          <div class="brand">
+            <a class="back-btn" href="./mall.html" aria-label="返回商城">
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="none">
+                <path d="M15 6 9 12l6 6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+            </a>
+            <div class="brand-text">
+              <div class="brand-title">商品详情</div>
+              <div class="brand-subtitle">价格/评价/购买须知</div>
+            </div>
+            <a class="icon-btn" href="./cart.html" aria-label="购物车">
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="none">
+                <path d="M6 7h15l-2 8H7L6 7Z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round" />
+                <path d="M6 7 5 4H3" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" />
+                <path d="M9 20a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3ZM17 20a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3Z" stroke="currentColor" stroke-width="1.6" />
+              </svg>
+            </a>
+          </div>
+        </header>
+
+        <section class="content app-content" aria-label="页面内容">
+          <article class="card">
+            <div class="cover" aria-hidden="true" style="height:180px"></div>
+            <div class="detail-title" style="margin-top:12px">四级阅读技巧课（4讲）</div>
+            <div class="detail-sub">
+              <span class="tag">课程</span>
+              <span class="tag ghost">支持回放</span>
+              <span class="detail-meta">销量 3.2k · 好评 98%</span>
+            </div>
+            <div class="divider"></div>
+            <div class="row">
+              <div>
+                <div class="meta-sub">到手价</div>
+                <div class="price red" style="font-size:20px">¥19.9</div>
+              </div>
+              <a class="mini-btn" href="./coupons.html">用券</a>
+            </div>
+            <div class="kv">
+              <div class="k">适用</div>
+              <div class="v">CET-4/基础薄弱</div>
+              <div class="k">包含</div>
+              <div class="v">4讲视频 + 真题讲解</div>
+              <div class="k">有效期</div>
+              <div class="v">180 天</div>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="card-hd">
+              <div class="card-title">课程亮点</div>
+              <div class="tags"><span class="tag ghost">提效</span></div>
+            </div>
+            <div class="para">
+              - 3 种题型快速定位：细节题/推断题/主旨题<br />
+              - 关键句抓取：同义替换与干扰项排除<br />
+              - 配套真题：练完立即生成错题本与诊断报告
+            </div>
+            <div class="divider"></div>
+            <div class="row">
+              <a class="mini-btn" href="./practice-topic-train.html">先做专项体验</a>
+              <a class="mini-btn primary" href="./order-confirm.html">立即购买</a>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="card-hd">
+              <div class="card-title">评价（精选）</div>
+              <div class="tags"><span class="tag ghost">128 条</span></div>
+            </div>
+            <div class="list">
+              <a class="list-item" href="./comments.html">
+                <div class="thumb" aria-hidden="true" style="background:linear-gradient(135deg, rgba(16,185,129,.55), rgba(47,214,255,.42));"></div>
+                <div class="li-text">
+                  <div class="li-main">“定位方法真的有效，做题速度快了很多。”</div>
+                  <div class="li-sub">用户：晨光 · 5 星</div>
+                </div>
+                <div class="li-right"><span class="badge green">好评</span><span class="badge">查看</span></div>
+              </a>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="card-hd">
+              <div class="card-title">购买须知</div>
+              <div class="tags"><span class="tag ghost">请阅读</span></div>
+            </div>
+            <div class="para muted">
+              数字内容/在线服务类商品下单后即时开通。若遇到无法观看/权限异常，可在“订单列表-联系客服/售后”处理。
+            </div>
+            <div class="row" style="margin-top:12px">
+              <a class="mini-btn" href="./cart.html">加入购物车</a>
+              <a class="mini-btn primary" href="./order-confirm.html">去结算</a>
+            </div>
+          </article>
+        </section>
+
+        <footer class="nav app-footer" aria-label="底部导航">
+          <a class="nav-item" href="./discover.html"><span class="nav-ic" aria-hidden="true"></span><span>首页</span></a>
+          <a class="nav-item" href="./practice-home.html"><span class="nav-ic" aria-hidden="true"></span><span>刷题</span></a>
+          <a class="nav-item" href="./community.html"><span class="nav-ic" aria-hidden="true"></span><span>社区</span></a>
+          <a class="nav-item active" href="./mall.html"><span class="nav-ic" aria-hidden="true"></span><span>商城</span></a>
+          <a class="nav-item" href="./me.html"><span class="nav-ic" aria-hidden="true"></span><span>我的</span></a>
+        </footer>
+      </section>
+    </main>
+  </body>
+</html>
+

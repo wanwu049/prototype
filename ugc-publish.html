@@ -1,0 +1,211 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>英圈刷题 - UGC发布页</title>
+    <link rel="stylesheet" href="./styles.css" />
+    <script src="./nav.js" defer></script>
+  </head>
+  <body>
+    <main class="stage">
+      <section class="phone" aria-label="UGC发布页">
+        <header class="topbar">
+          <div class="status">
+            <div class="status-left">10:01</div>
+            <div class="status-right"><span class="pill">5G</span><span class="pill">90%</span></div>
+          </div>
+          <div class="brand">
+            <a class="back-btn" href="./discover.html" aria-label="返回">
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="none">
+                <path d="M15 6 9 12l6 6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+            </a>
+            <div class="brand-text">
+              <div class="brand-title">UGC 发布页</div>
+              <div class="brand-subtitle">发布知识分享、错题解析、学习技巧、口语素材</div>
+            </div>
+          </div>
+        </header>
+
+        <section class="content" aria-label="发布内容表单">
+          <article class="hero">
+            <div class="hero-bg" aria-hidden="true"></div>
+            <div class="hero-body">
+              <div class="hero-title">开始你的第一篇分享</div>
+              <div class="hero-subtitle">支持图文/短视频，优质内容可获得推荐流量</div>
+              <a class="cta" href="./ugc-edit.html">去编辑</a>
+            </div>
+          </article>
+
+          <section class="panel mt-12">
+            <div class="panel-title">发布信息</div>
+            <div class="field">
+              <label class="field-label" for="ugc-title">标题</label>
+              <input id="ugc-title" class="field-input" type="text" placeholder="例如：3步搞定长难句翻译" />
+            </div>
+            <div class="field">
+              <label class="field-label" for="ugc-topic">话题</label>
+              <input id="ugc-topic" class="field-input" type="text" placeholder="例如：#四六级 #口语素材 #错题复盘" />
+            </div>
+            <div class="field">
+              <label class="field-label" for="ugc-desc">内容摘要</label>
+              <textarea id="ugc-desc" class="field-input" rows="4" placeholder="简要描述你的内容亮点与适合人群"></textarea>
+            </div>
+            <div class="detail-cta">
+              <a class="mini-btn" href="./ugc-edit.html">保存草稿</a>
+              <button class="mini-btn" type="button">提交发布</button>
+            </div>
+          </section>
+
+          <section class="cards" aria-label="发布类型">
+            <article class="card">
+              <div class="card-hd">
+                <div class="card-title">内容类型</div>
+                <div class="tags">
+                  <span class="tag">必选</span>
+                </div>
+              </div>
+              <div class="chip-grid">
+                <a class="chip2 active" href="#">错题解析</a>
+                <a class="chip2" href="#">学习技巧</a>
+                <a class="chip2" href="#">口语素材</a>
+                <a class="chip2" href="#">备考经验</a>
+                <a class="chip2" href="#">提分方法</a>
+                <a class="chip2" href="#">词汇积累</a>
+              </div>
+            </article>
+
+            <article class="card">
+              <div class="card-hd">
+                <div class="card-title">发布清单</div>
+                <div class="tags">
+                  <span class="tag ghost">发布前检查</span>
+                </div>
+              </div>
+              <div class="list">
+                <a class="list-item" href="#">
+                  <div class="li-main">标题长度在 12~28 字，关键词完整</div>
+                  <div class="li-sub">建议包含考试类型、方法关键词、适用人群</div>
+                </a>
+                <a class="list-item" href="#">
+                  <div class="li-main">封面图清晰、文字不遮挡主要内容</div>
+                  <div class="li-sub">优先使用蓝白高对比配色，点击率更稳定</div>
+                </a>
+                <a class="list-item" href="#">
+                  <div class="li-main">正文结构完整：问题-方法-示例-总结</div>
+                  <div class="li-sub">结尾增加行动建议可提升收藏率</div>
+                </a>
+                <a class="list-item" href="#">
+                  <div class="li-main">引用素材注明来源，避免审核退回</div>
+                  <div class="li-sub">涉及真题时附上年份和题型</div>
+                </a>
+              </div>
+            </article>
+
+            <article class="card">
+              <div class="card-hd">
+                <div class="card-title">发布策略建议</div>
+                <div class="tags">
+                  <span class="tag">平台建议</span>
+                </div>
+              </div>
+              <div class="ugc">
+                <div class="avatar" aria-hidden="true"></div>
+                <div class="ugc-body">
+                  <div class="meta-main">19:30-22:00 发学习技巧类内容，互动更高</div>
+                  <div class="meta-sub">近 7 日同类内容平均互动率提升 12.6%</div>
+                </div>
+              </div>
+              <div class="ugc">
+                <div class="avatar" aria-hidden="true"></div>
+                <div class="ugc-body">
+                  <div class="meta-main">周一、周四发布错题复盘，收藏率更稳</div>
+                  <div class="meta-sub">建议每篇至少 1 个完整示例题</div>
+                </div>
+              </div>
+              <div class="ugc">
+                <div class="avatar" aria-hidden="true"></div>
+                <div class="ugc-body">
+                  <div class="meta-main">视频前 5 秒加“结果导向”句式</div>
+                  <div class="meta-sub">例如：3 分钟学会翻译长难句拆解法</div>
+                </div>
+              </div>
+            </article>
+          </section>
+
+          <section class="panel mt-12" aria-label="草稿箱">
+            <div class="panel-title">草稿箱</div>
+            <div class="list">
+              <a class="list-item" href="./ugc-edit.html">
+                <div class="li-main">草稿 01：阅读定位题避坑指南</div>
+                <div class="li-sub">最后编辑：今天 08:15 · 状态：待完善</div>
+              </a>
+              <a class="list-item" href="./ugc-edit.html">
+                <div class="li-main">草稿 02：语法填空高频动词短语</div>
+                <div class="li-sub">最后编辑：昨天 21:42 · 状态：可发布</div>
+              </a>
+              <a class="list-item" href="./ugc-edit.html">
+                <div class="li-main">草稿 03：听力场景词汇整理模板</div>
+                <div class="li-sub">最后编辑：昨天 19:06 · 状态：需补封面</div>
+              </a>
+              <a class="list-item" href="./ugc-edit.html">
+                <div class="li-main">草稿 04：作文开头段万能句型</div>
+                <div class="li-sub">最后编辑：周三 22:11 · 状态：待二次润色</div>
+              </a>
+            </div>
+          </section>
+
+          <section class="cards" aria-label="快速入口">
+            <article class="card grid2">
+              <div class="mini-card">
+                <div class="mini-title">进入编辑页</div>
+                <div class="mini-sub">继续完善图文/视频内容</div>
+                <a class="mini-chip" href="./ugc-edit.html">继续编辑</a>
+              </div>
+              <div class="mini-card alt">
+                <div class="mini-title">查看审核进度</div>
+                <div class="mini-sub">追踪提交后的审核状态</div>
+                <a class="mini-chip price" href="./ugc-review-status.html">查看进度</a>
+              </div>
+            </article>
+          </section>
+
+          <section class="panel mt-12" aria-label="创作FAQ">
+            <div class="panel-title">创作常见问题</div>
+            <div class="list">
+              <a class="list-item" href="#">
+                <div class="li-main">Q1：为什么我的内容审核较慢？</div>
+                <div class="li-sub">高峰时段会延迟，建议错峰发布并保证素材来源完整。</div>
+              </a>
+              <a class="list-item" href="#">
+                <div class="li-main">Q2：发布后还能修改吗？</div>
+                <div class="li-sub">审核中不可修改；通过后可发起“更新版本”并重新审核。</div>
+              </a>
+              <a class="list-item" href="#">
+                <div class="li-main">Q3：视频内容时长建议？</div>
+                <div class="li-sub">学习技巧类建议 30-90 秒，错题讲解建议 60-180 秒。</div>
+              </a>
+              <a class="list-item" href="#">
+                <div class="li-main">Q4：如何提升推荐量？</div>
+                <div class="li-sub">持续更新 + 高完成率 + 明确标签，是基础增长组合。</div>
+              </a>
+            </div>
+          </section>
+
+          <section class="cards" aria-label="页面尾部入口">
+            <article class="card">
+              <div class="card-row">
+                <div class="meta">
+                  <div class="meta-main">准备好了就去编辑并提交审核</div>
+                  <div class="meta-sub">你的每次发布都会沉淀创作资产</div>
+                </div>
+                <a class="mini-btn" href="./ugc-edit.html">立即开始</a>
+              </div>
+            </article>
+          </section>
+        </section>
+      </section>
+    </main>
+  </body>
+</html>

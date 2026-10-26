@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>英圈刷题 - AI批改结果页（刷题诊断）</title>
+    <link rel="stylesheet" href="./styles.css" />
+    <script src="./nav.js" defer></script>
+  </head>
+  <body>
+    <main class="stage">
+      <section class="phone app" data-page="practice-ai-result" aria-label="WeChat Mini Program Prototype">
+        <header class="topbar app-header">
+          <div class="status">
+            <div class="status-left">10:01</div>
+            <div class="status-right"><span class="pill">5G</span><span class="pill">90%</span></div>
+          </div>
+          <div class="brand">
+            <a class="back-btn" href="./practice-home.html" aria-label="返回刷题首页">
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="none">
+                <path d="M15 6 9 12l6 6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+            </a>
+            <div class="brand-text">
+              <div class="brand-title">AI 批改结果</div>
+              <div class="brand-subtitle">得分/解析/知识点掌握情况</div>
+            </div>
+            <a class="icon-btn" href="./practice-diagnosis-report.html" aria-label="诊断报告">
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="none">
+                <path d="M6 4h12a2 2 0 0 1 2 2v14H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2Z" stroke="currentColor" stroke-width="1.6" />
+                <path d="M8 8h8M8 12h8M8 16h6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" />
+              </svg>
+            </a>
+          </div>
+        </header>
+
+        <section class="content app-content" aria-label="页面内容">
+          <section class="stats" aria-label="成绩概览">
+            <div class="stat kpi">
+              <div class="stat-num">84</div>
+              <div class="stat-lab">本次得分</div>
+              <div class="stat-mini">用时 18:20</div>
+            </div>
+            <div class="stat">
+              <div class="stat-num">71%</div>
+              <div class="stat-lab">正确率</div>
+              <div class="stat-mini">薄弱：定位</div>
+            </div>
+            <div class="stat">
+              <div class="stat-num">+2</div>
+              <div class="stat-lab">掌握提升</div>
+              <div class="stat-mini">更新知识图谱</div>
+            </div>
+          </section>
+
+          <article class="card">
+            <div class="card-hd">
+              <div class="card-title">错题解析（示例）</div>
+              <div class="tags"><span class="tag ghost">第 3 题</span></div>
+            </div>
+            <div class="para"><b>你的选择：</b>A（错误） · <b>正确答案：</b>D</div>
+            <div class="para muted">
+              解析：题干问“fail to keep learning”的主要原因，原文在第 2 段明确指出“lack of consistent feedback”
+              与“no clear goals”并列出现，但主因落在 “no clear goals” 后的举例句，指向 D 的“too difficult”是干扰项。
+            </div>
+            <div class="options">
+              <div class="option wrong">
+                <span class="opt-key">A</span>
+                <span class="opt-body"><div class="opt-title">lack clear goals and feedback</div></span>
+              </div>
+              <div class="option correct">
+                <span class="opt-key">D</span>
+                <span class="opt-body"><div class="opt-title">feel learning is too difficult</div><div class="opt-sub">命题点：主旨归因</div></span>
+              </div>
+            </div>
+            <div class="divider"></div>
+            <div class="row">
+              <a class="mini-btn" href="./practice-wrongbook.html">加入错题本</a>
+              <a class="mini-btn primary" href="./practice-topic-train.html">同类专项</a>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="card-hd">
+              <div class="card-title">知识点掌握</div>
+              <div class="tags"><span class="tag ghost">本次更新</span></div>
+            </div>
+            <div class="list">
+              <a class="list-item" href="./practice-topic-train.html">
+                <div class="thumb" aria-hidden="true"></div>
+                <div class="li-text">
+                  <div class="li-main">阅读定位（细节题）</div>
+                  <div class="li-sub">掌握度 58% → 61%</div>
+                </div>
+                <div class="li-right"><span class="badge red">薄弱</span><span class="badge blue">去练</span></div>
+              </a>
+              <a class="list-item" href="./practice-topic-train.html">
+                <div class="thumb" aria-hidden="true" style="background:linear-gradient(135deg, rgba(16,185,129,.55), rgba(47,214,255,.42));"></div>
+                <div class="li-text">
+                  <div class="li-main">同义替换</div>
+                  <div class="li-sub">掌握度 66% → 70%</div>
+                </div>
+                <div class="li-right"><span class="badge green">提升</span><span class="badge">复盘</span></div>
+              </a>
+            </div>
+          </article>
+        </section>
+
+        <footer class="nav app-footer" aria-label="底部导航">
+          <a class="nav-item" href="./discover.html"><span class="nav-ic" aria-hidden="true"></span><span>首页</span></a>
+          <a class="nav-item active" href="./practice-home.html"><span class="nav-ic" aria-hidden="true"></span><span>刷题</span></a>
+          <a class="nav-item" href="./community.html"><span class="nav-ic" aria-hidden="true"></span><span>社区</span></a>
+          <a class="nav-item" href="./mall.html"><span class="nav-ic" aria-hidden="true"></span><span>商城</span></a>
+          <a class="nav-item" href="./me.html"><span class="nav-ic" aria-hidden="true"></span><span>我的</span></a>
+        </footer>
+      </section>
+    </main>
+  </body>
+</html>
+

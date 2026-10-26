@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>英圈刷题 - 人工批改结果页（刷题诊断）</title>
+    <link rel="stylesheet" href="./styles.css" />
+    <script src="./nav.js" defer></script>
+  </head>
+  <body>
+    <main class="stage">
+      <section class="phone app" data-page="practice-human-result" aria-label="WeChat Mini Program Prototype">
+        <header class="topbar app-header">
+          <div class="status">
+            <div class="status-left">10:01</div>
+            <div class="status-right"><span class="pill">5G</span><span class="pill">90%</span></div>
+          </div>
+          <div class="brand">
+            <a class="back-btn" href="./practice-home.html" aria-label="返回刷题首页">
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="none">
+                <path d="M15 6 9 12l6 6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+            </a>
+            <div class="brand-text">
+              <div class="brand-title">老师批改结果</div>
+              <div class="brand-subtitle">作文/主观题评语 · 修改建议</div>
+            </div>
+            <a class="icon-btn" href="./share.html" aria-label="分享">
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="none">
+                <path d="M8.6 12.2 14.9 9.1M8.6 11.8 14.9 14.9" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" />
+                <path d="M7 15a3 3 0 1 0 0-6 3 3 0 0 0 0 6ZM16 21a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z" stroke="currentColor" stroke-width="1.6" />
+              </svg>
+            </a>
+          </div>
+        </header>
+
+        <section class="content app-content" aria-label="页面内容">
+          <section class="stats" aria-label="评分概览">
+            <div class="stat kpi">
+              <div class="stat-num">13/15</div>
+              <div class="stat-lab">作文得分</div>
+              <div class="stat-mini">等级：良好</div>
+            </div>
+            <div class="stat">
+              <div class="stat-num">结构</div>
+              <div class="stat-lab">较清晰</div>
+              <div class="stat-mini">段落衔接可更强</div>
+            </div>
+            <div class="stat">
+              <div class="stat-num">语法</div>
+              <div class="stat-lab">少量错误</div>
+              <div class="stat-mini">建议复盘时态</div>
+            </div>
+          </section>
+
+          <article class="card">
+            <div class="card-hd">
+              <div class="card-title">老师评语</div>
+              <div class="tags"><span class="tag ghost">写作老师Luna</span></div>
+            </div>
+            <div class="para">
+              优点：观点明确，论据基本充分，用词较丰富。<br />
+              待改进：第 2 段举例略泛，建议补充更具体的细节；结尾可以用“让步 + 强调”增强力度。
+            </div>
+            <div class="callout">
+              建议模板：<br />
+              Although …, it is still crucial that …<br />
+              This is why we should …
+            </div>
+            <div class="row" style="margin-top:12px">
+              <a class="mini-btn" href="./practice-wrongbook.html">收藏建议</a>
+              <a class="mini-btn primary" href="./practice-topic-train.html">针对性练习</a>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="card-hd">
+              <div class="card-title">修改建议（示例）</div>
+              <div class="tags"><span class="tag ghost">3 处</span></div>
+            </div>
+            <div class="list">
+              <a class="list-item" href="#">
+                <div class="thumb" aria-hidden="true" style="background:linear-gradient(135deg, rgba(255,77,109,.55), rgba(47,214,255,.42));"></div>
+                <div class="li-text">
+                  <div class="li-main">时态：have did → have done</div>
+                  <div class="li-sub">建议：复盘现在完成时用法</div>
+                </div>
+                <div class="li-right"><span class="badge red">语法</span><span class="badge">记笔记</span></div>
+              </a>
+              <a class="list-item" href="#">
+                <div class="thumb" aria-hidden="true" style="background:linear-gradient(135deg, rgba(245,158,11,.55), rgba(47,214,255,.42));"></div>
+                <div class="li-text">
+                  <div class="li-main">用词：important → crucial/vital</div>
+                  <div class="li-sub">建议：积累替换词与搭配</div>
+                </div>
+                <div class="li-right"><span class="badge orange">词汇</span><span class="badge">收藏</span></div>
+              </a>
+            </div>
+          </article>
+        </section>
+
+        <footer class="nav app-footer" aria-label="底部导航">
+          <a class="nav-item" href="./discover.html"><span class="nav-ic" aria-hidden="true"></span><span>首页</span></a>
+          <a class="nav-item active" href="./practice-home.html"><span class="nav-ic" aria-hidden="true"></span><span>刷题</span></a>
+          <a class="nav-item" href="./community.html"><span class="nav-ic" aria-hidden="true"></span><span>社区</span></a>
+          <a class="nav-item" href="./mall.html"><span class="nav-ic" aria-hidden="true"></span><span>商城</span></a>
+          <a class="nav-item" href="./me.html"><span class="nav-ic" aria-hidden="true"></span><span>我的</span></a>
+        </footer>
+      </section>
+    </main>
+  </body>
+</html>
+

@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>英圈刷题 - 消息-平台客服</title>
+    <link rel="stylesheet" href="./styles.css" />
+    <script src="./nav.js" defer></script>
+  </head>
+  <body>
+    <main class="stage">
+      <section class="phone app" data-page="messages-support" aria-label="WeChat Mini Program Prototype">
+        <header class="topbar app-header">
+          <div class="status">
+            <div class="status-left">10:01</div>
+            <div class="status-right">
+              <span class="pill">5G</span>
+              <span class="pill">90%</span>
+            </div>
+          </div>
+
+          <div class="brand">
+            <a class="back-btn" href="./messages.html" aria-label="返回消息中心">
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="none">
+                <path
+                  d="M15 6 9 12l6 6"
+                  stroke="currentColor"
+                  stroke-width="1.8"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </a>
+            <div class="brand-text">
+              <div class="brand-title">平台客服</div>
+              <div class="brand-subtitle">AI/人工答疑 · 工单进度</div>
+            </div>
+            <a class="icon-btn" href="./help.html" aria-label="帮助中心">
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="none">
+                <path
+                  d="M12 18h.01"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                />
+                <path
+                  d="M9.2 9a3 3 0 1 1 4.1 2.8c-.9.4-1.3 1-1.3 2.2"
+                  stroke="currentColor"
+                  stroke-width="1.6"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M12 22a10 10 0 1 0 0-20 10 10 0 0 0 0 20Z"
+                  stroke="currentColor"
+                  stroke-width="1.2"
+                  opacity=".9"
+                />
+              </svg>
+            </a>
+          </div>
+        </header>
+
+        <section class="content app-content" aria-label="页面内容">
+          <article class="card">
+            <div class="card-hd">
+              <div class="card-title">快捷问题</div>
+              <div class="tags"><span class="tag ghost">一键提问</span></div>
+            </div>
+            <div class="chip-grid" role="list">
+              <a class="chip2 active" href="#q1" role="listitem">刷题卡顿</a>
+              <a class="chip2" href="#q2" role="listitem">订单/退款</a>
+              <a class="chip2" href="#q3" role="listitem">账号问题</a>
+              <a class="chip2" href="#q4" role="listitem">内容举报</a>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="card-hd">
+              <div class="card-title">对话（占位）</div>
+              <div class="tags"><span class="tag">AI 在线</span></div>
+            </div>
+
+            <div class="para" style="margin-top: 0">
+              你好，我是英圈刷题客服。你可以描述问题、截图报错信息，或选择上面的快捷问题。
+            </div>
+
+            <div class="comment composer" style="margin-top: 12px">
+              <div class="avatar sm" aria-hidden="true"></div>
+              <div class="composer-box">
+                <input class="field-input" type="text" placeholder="输入你的问题…" />
+                <div class="composer-actions">
+                  <a class="ghost-btn" href="./orders.html">查订单</a>
+                  <a class="ghost-btn" href="./settings.html">设置</a>
+                  <a class="mini-btn" href="#">发送</a>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article class="card" id="q2">
+            <div class="card-hd">
+              <div class="card-title">工单进度（示例）</div>
+              <div class="tags"><span class="tag ghost">可扩展</span></div>
+            </div>
+            <div class="list">
+              <a class="list-item" href="./orders.html">
+                <div class="li-main">退款申请：订单 #A10291</div>
+                <div class="li-sub">处理中 · 预计 24 小时内完成</div>
+              </a>
+              <a class="list-item" href="./reset-password.html">
+                <div class="li-main">账号找回：手机号更换</div>
+                <div class="li-sub">待补充实名认证信息</div>
+              </a>
+            </div>
+          </article>
+        </section>
+
+        <footer class="nav app-footer" aria-label="底部导航">
+          <a class="nav-item" href="./discover.html">
+            <span class="nav-ic" aria-hidden="true"></span>
+            <span>首页</span>
+          </a>
+          <a class="nav-item" href="./practice-home.html">
+            <span class="nav-ic" aria-hidden="true"></span>
+            <span>刷题</span>
+          </a>
+          <a class="nav-item" href="./community.html">
+            <span class="nav-ic" aria-hidden="true"></span>
+            <span>社区</span>
+          </a>
+          <a class="nav-item" href="./mall.html">
+            <span class="nav-ic" aria-hidden="true"></span>
+            <span>商城</span>
+          </a>
+          <a class="nav-item" href="./me.html">
+            <span class="nav-ic" aria-hidden="true"></span>
+            <span>我的</span>
+          </a>
+        </footer>
+      </section>
+    </main>
+  </body>
+</html>
+

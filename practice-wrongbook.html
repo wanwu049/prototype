@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>英圈刷题 - 错题本页（刷题诊断）</title>
+    <link rel="stylesheet" href="./styles.css" />
+    <script src="./nav.js" defer></script>
+  </head>
+  <body>
+    <main class="stage">
+      <section class="phone app" data-page="practice-wrongbook" aria-label="WeChat Mini Program Prototype">
+        <header class="topbar app-header">
+          <div class="status">
+            <div class="status-left">10:01</div>
+            <div class="status-right"><span class="pill">5G</span><span class="pill">90%</span></div>
+          </div>
+          <div class="brand">
+            <a class="back-btn" href="./practice-home.html" aria-label="返回刷题首页">
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="none">
+                <path d="M15 6 9 12l6 6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+            </a>
+            <div class="brand-text">
+              <div class="brand-title">错题本</div>
+              <div class="brand-subtitle">分类/筛选 · 重做 · 收藏 · 导出</div>
+            </div>
+            <a class="icon-btn" href="./share.html" aria-label="导出（占位）">
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="none">
+                <path d="M12 3v10m0 0 3-3m-3 3-3-3" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M5 14v4a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" />
+              </svg>
+            </a>
+          </div>
+
+          <div class="filters" aria-label="筛选与排序">
+            <a class="chip2 active" href="#">全部</a>
+            <a class="chip2" href="#">阅读</a>
+            <a class="chip2" href="#">翻译</a>
+            <a class="chip2" href="#">写作</a>
+            <a class="chip2" href="#">按时间</a>
+          </div>
+        </header>
+
+        <section class="content app-content" aria-label="页面内容">
+          <section class="stats" aria-label="错题概览">
+            <div class="stat kpi">
+              <div class="stat-num">18</div>
+              <div class="stat-lab">待复盘</div>
+              <div class="stat-mini">本周新增 6</div>
+            </div>
+            <div class="stat">
+              <div class="stat-num">7</div>
+              <div class="stat-lab">已收藏解析</div>
+              <div class="stat-mini">可导出</div>
+            </div>
+            <div class="stat">
+              <div class="stat-num">4</div>
+              <div class="stat-lab">已重做正确</div>
+              <div class="stat-mini">继续保持</div>
+            </div>
+          </section>
+
+          <article class="card">
+            <div class="card-hd">
+              <div class="card-title">错题列表</div>
+              <div class="tags"><span class="tag ghost">支持批量操作</span></div>
+            </div>
+            <div class="list">
+              <a class="list-item" href="./practice-ai-result.html">
+                <div class="thumb" aria-hidden="true"></div>
+                <div class="li-text">
+                  <div class="li-main">阅读：主旨题（定位错误）</div>
+                  <div class="li-sub">来源：CET-4 2023 · 错因：细节当主旨</div>
+                </div>
+                <div class="li-right"><span class="badge red">薄弱</span><span class="badge blue">看解析</span></div>
+              </a>
+              <a class="list-item" href="./practice-topic-train.html">
+                <div class="thumb" aria-hidden="true" style="background:linear-gradient(135deg, rgba(245,158,11,.55), rgba(47,214,255,.42));"></div>
+                <div class="li-text">
+                  <div class="li-main">翻译：固定搭配（遗漏）</div>
+                  <div class="li-sub">来源：热点句型 · 错因：搭配不熟</div>
+                </div>
+                <div class="li-right"><span class="badge orange">词汇</span><span class="badge">去重做</span></div>
+              </a>
+              <a class="list-item" href="./practice-human-result.html">
+                <div class="thumb" aria-hidden="true" style="background:linear-gradient(135deg, rgba(124,58,237,.65), rgba(47,214,255,.42));"></div>
+                <div class="li-text">
+                  <div class="li-main">写作：论证不具体（老师点评）</div>
+                  <div class="li-sub">来源：作文批改 · 建议：补充例证</div>
+                </div>
+                <div class="li-right"><span class="badge orange">UGC</span><span class="badge">看建议</span></div>
+              </a>
+            </div>
+            <div class="divider"></div>
+            <div class="row">
+              <a class="mini-btn" href="./practice-quiz.html">批量重做</a>
+              <a class="mini-btn primary" href="./practice-diagnosis-report.html">生成复盘计划</a>
+            </div>
+          </article>
+        </section>
+
+        <footer class="nav app-footer" aria-label="底部导航">
+          <a class="nav-item" href="./discover.html"><span class="nav-ic" aria-hidden="true"></span><span>首页</span></a>
+          <a class="nav-item active" href="./practice-home.html"><span class="nav-ic" aria-hidden="true"></span><span>刷题</span></a>
+          <a class="nav-item" href="./community.html"><span class="nav-ic" aria-hidden="true"></span><span>社区</span></a>
+          <a class="nav-item" href="./mall.html"><span class="nav-ic" aria-hidden="true"></span><span>商城</span></a>
+          <a class="nav-item" href="./me.html"><span class="nav-ic" aria-hidden="true"></span><span>我的</span></a>
+        </footer>
+      </section>
+    </main>
+  </body>
+</html>
+

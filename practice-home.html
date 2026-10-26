@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>英圈刷题 - 刷题首页（刷题诊断）</title>
+    <link rel="stylesheet" href="./styles.css" />
+    <script src="./nav.js" defer></script>
+  </head>
+  <body>
+    <main class="stage">
+      <section class="phone app" data-page="practice-home" aria-label="WeChat Mini Program Prototype">
+        <header class="topbar app-header">
+          <div class="status">
+            <div class="status-left">10:01</div>
+            <div class="status-right"><span class="pill">5G</span><span class="pill">90%</span></div>
+          </div>
+          <div class="brand">
+            <a class="back-btn" href="./discover.html" aria-label="返回首页">
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="none">
+                <path d="M15 6 9 12l6 6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+            </a>
+            <div class="brand-text">
+              <div class="brand-title">刷题诊断</div>
+              <div class="brand-subtitle">真题/模拟/专项/错题本 · 学情可视化</div>
+            </div>
+            <a class="icon-btn" href="./practice-photo-answer.html" aria-label="拍照答题">
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="none">
+                <path
+                  d="M8 7h8l1.2 2H20a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h2.8L8 7Z"
+                  stroke="currentColor"
+                  stroke-width="1.6"
+                  stroke-linejoin="round"
+                />
+                <path d="M12 18a4 4 0 1 0 0-8 4 4 0 0 0 0 8Z" stroke="currentColor" stroke-width="1.6" />
+              </svg>
+            </a>
+          </div>
+        </header>
+
+        <section class="content app-content" aria-label="页面内容">
+          <article class="hero">
+            <div class="hero-bg" aria-hidden="true"></div>
+            <div class="hero-body">
+              <div class="row">
+                <div>
+                  <div class="hero-title">AI 秒批 + 学情诊断</div>
+                  <div class="hero-subtitle">拍照/答题卡/在线作答都支持</div>
+                </div>
+                <span class="timer" aria-label="今日剩余时间">今日：20min</span>
+              </div>
+              <div class="stepper" aria-label="诊断流程">
+                <div class="step on">
+                  <div class="step-title">作答</div>
+                  <div class="step-sub">在线/拍照</div>
+                </div>
+                <div class="step">
+                  <div class="step-title">批改</div>
+                  <div class="step-sub">AI/老师</div>
+                </div>
+                <div class="step">
+                  <div class="step-title">报告</div>
+                  <div class="step-sub">薄弱点</div>
+                </div>
+              </div>
+              <div style="margin-top:12px; display:flex; gap:10px; flex-wrap:wrap;">
+                <a class="mini-btn primary" href="./practice-quiz.html">开始在线刷题</a>
+                <a class="mini-btn" href="./practice-diagnosis-report.html">查看诊断报告</a>
+              </div>
+            </div>
+          </article>
+
+          <section class="stats" aria-label="学习概览">
+            <div class="stat kpi">
+              <div class="stat-num">78</div>
+              <div class="stat-lab">本周刷题数</div>
+              <div class="stat-mini">正确率 71%</div>
+            </div>
+            <div class="stat">
+              <div class="stat-num">18</div>
+              <div class="stat-lab">错题待复盘</div>
+              <div class="stat-mini">阅读定位偏弱</div>
+            </div>
+            <div class="stat">
+              <div class="stat-num">+12</div>
+              <div class="stat-lab">预测提分</div>
+              <div class="stat-mini">坚持 7 天</div>
+            </div>
+          </section>
+
+          <div class="section-hd">
+            <div class="section-title">刷题类型</div>
+            <div class="section-sub">按目标选择</div>
+          </div>
+          <section class="actions" aria-label="刷题入口">
+            <a class="action" href="./practice-quiz.html" aria-label="真题">
+              <span class="action-ic" style="color:rgba(30,107,255,.95)">
+                <span class="opt-key">真</span>
+              </span>
+              <span class="action-txt">真题</span>
+            </a>
+            <a class="action" href="./practice-quiz.html" aria-label="模拟">
+              <span class="action-ic" style="color:rgba(16,185,129,.95)"><span class="opt-key">模</span></span>
+              <span class="action-txt">模拟</span>
+            </a>
+            <a class="action" href="./practice-topic-train.html" aria-label="专项">
+              <span class="action-ic" style="color:rgba(124,58,237,.95)"><span class="opt-key">专</span></span>
+              <span class="action-txt">专项</span>
+            </a>
+            <a class="action" href="./practice-wrongbook.html" aria-label="错题本">
+              <span class="action-ic" style="color:rgba(245,158,11,.95)"><span class="opt-key">错</span></span>
+              <span class="action-txt">错题本</span>
+            </a>
+          </section>
+
+          <div class="section-hd">
+            <div class="section-title">最近练习</div>
+            <div class="section-sub">继续上次进度</div>
+          </div>
+          <article class="card">
+            <div class="list">
+              <a class="list-item" href="./practice-quiz.html">
+                <div class="thumb" aria-hidden="true"></div>
+                <div class="li-text">
+                  <div class="li-main">CET-4 阅读理解专项（15题）</div>
+                  <div class="li-sub">完成 9/15 · 用时 11:20</div>
+                </div>
+                <div class="li-right">
+                  <span class="badge blue">继续</span>
+                  <span class="badge">限时</span>
+                </div>
+              </a>
+              <a class="list-item" href="./practice-ai-result.html">
+                <div class="thumb" aria-hidden="true" style="background:linear-gradient(135deg, rgba(16,185,129,.55), rgba(47,214,255,.42));"></div>
+                <div class="li-text">
+                  <div class="li-main">AI 批改：翻译热点句型（8题）</div>
+                  <div class="li-sub">得分 84 · 薄弱点：搭配</div>
+                </div>
+                <div class="li-right">
+                  <span class="badge green">已批改</span>
+                  <span class="badge">看解析</span>
+                </div>
+              </a>
+            </div>
+          </article>
+        </section>
+
+        <footer class="nav app-footer" aria-label="底部导航">
+          <a class="nav-item" href="./discover.html"><span class="nav-ic" aria-hidden="true"></span><span>首页</span></a>
+          <a class="nav-item active" href="./practice-home.html" aria-current="page"><span class="nav-ic" aria-hidden="true"></span><span>刷题</span></a>
+          <a class="nav-item" href="./community.html"><span class="nav-ic" aria-hidden="true"></span><span>社区</span></a>
+          <a class="nav-item" href="./mall.html"><span class="nav-ic" aria-hidden="true"></span><span>商城</span></a>
+          <a class="nav-item" href="./me.html"><span class="nav-ic" aria-hidden="true"></span><span>我的</span></a>
+        </footer>
+      </section>
+    </main>
+  </body>
+</html>
+

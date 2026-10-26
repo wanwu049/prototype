@@ -1,0 +1,209 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>英圈刷题 - UGC编辑页</title>
+    <link rel="stylesheet" href="./styles.css" />
+    <script src="./nav.js" defer></script>
+  </head>
+  <body>
+    <main class="stage">
+      <section class="phone" aria-label="UGC编辑页">
+        <header class="topbar">
+          <div class="status">
+            <div class="status-left">10:01</div>
+            <div class="status-right"><span class="pill">5G</span><span class="pill">90%</span></div>
+          </div>
+          <div class="brand">
+            <a class="back-btn" href="./ugc-publish.html" aria-label="返回">
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="none">
+                <path d="M15 6 9 12l6 6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+            </a>
+            <div class="brand-text">
+              <div class="brand-title">UGC 编辑页</div>
+              <div class="brand-subtitle">支持图文、视频、排版、添加话题</div>
+            </div>
+          </div>
+        </header>
+
+        <section class="content" aria-label="编辑器区域">
+          <article class="panel">
+            <div class="panel-title">正文编辑</div>
+            <div class="field">
+              <label class="field-label" for="ed-title">内容标题</label>
+              <input id="ed-title" class="field-input" type="text" value="四六级翻译提分：错题复盘模板" />
+            </div>
+            <div class="field">
+              <label class="field-label" for="ed-body">图文内容</label>
+              <textarea id="ed-body" class="field-input" rows="8">第1步：拆句找主干；第2步：定位时态和语态；第3步：替换高频词并检查固定搭配。配合错题本做每周复盘。</textarea>
+            </div>
+          </article>
+
+          <section class="cards">
+            <article class="card">
+              <div class="card-hd">
+                <div class="card-title">素材与排版</div>
+                <div class="tags"><span class="tag">图文</span><span class="tag ghost">视频</span></div>
+              </div>
+              <div class="feed-actions">
+                <a class="ghost-btn" href="#">添加封面</a>
+                <a class="ghost-btn" href="#">插入图片</a>
+                <a class="ghost-btn" href="#">插入视频</a>
+                <a class="ghost-btn" href="#">段落样式</a>
+              </div>
+            </article>
+
+            <article class="card">
+              <div class="card-hd">
+                <div class="card-title">话题设置</div>
+                <div class="tags"><span class="tag">推荐</span></div>
+              </div>
+              <div class="chip-grid" aria-label="话题标签">
+                <a class="chip2 active" href="#"># 错题解析</a>
+                <a class="chip2 active" href="#"># 学习技巧</a>
+                <a class="chip2" href="#"># 口语素材</a>
+                <a class="chip2" href="#"># 真题经验</a>
+              </div>
+            </article>
+          </section>
+
+          <section class="cards" aria-label="内容结构模板">
+            <article class="card">
+              <div class="card-hd">
+                <div class="card-title">推荐结构模板</div>
+                <div class="tags"><span class="tag">高互动</span></div>
+              </div>
+              <div class="list">
+                <a class="list-item" href="#">
+                  <div class="li-main">模板 A：问题引入 → 误区 → 方法 → 示例</div>
+                  <div class="li-sub">适合错题解析与翻译技巧类内容</div>
+                </a>
+                <a class="list-item" href="#">
+                  <div class="li-main">模板 B：目标分数 → 每日计划 → 复盘方法</div>
+                  <div class="li-sub">适合备考路线图与打卡系列</div>
+                </a>
+                <a class="list-item" href="#">
+                  <div class="li-main">模板 C：口语素材 → 跟读步骤 → 打分标准</div>
+                  <div class="li-sub">适合口语训练和实战素材类内容</div>
+                </a>
+              </div>
+            </article>
+
+            <article class="card">
+              <div class="card-hd">
+                <div class="card-title">配图与视频建议</div>
+                <div class="tags"><span class="tag ghost">画面规范</span></div>
+              </div>
+              <div class="ugc">
+                <div class="avatar" aria-hidden="true"></div>
+                <div class="ugc-body">
+                  <div class="meta-main">封面标题保持 2 行以内，字号不小于 28px</div>
+                  <div class="meta-sub">移动端阅读优先，信息要在首屏传达清楚</div>
+                </div>
+              </div>
+              <div class="ugc">
+                <div class="avatar" aria-hidden="true"></div>
+                <div class="ugc-body">
+                  <div class="meta-main">视频建议 9:16 竖版，关键句加字幕</div>
+                  <div class="meta-sub">字幕可提升完播率和理解效率</div>
+                </div>
+              </div>
+              <div class="ugc">
+                <div class="avatar" aria-hidden="true"></div>
+                <div class="ugc-body">
+                  <div class="meta-main">知识点卡片建议“一页一个重点”</div>
+                  <div class="meta-sub">避免信息拥挤，控制每页 40~60 字</div>
+                </div>
+              </div>
+            </article>
+
+            <article class="card">
+              <div class="card-hd">
+                <div class="card-title">自动校验结果</div>
+                <div class="tags"><span class="tag">通过 6/8</span></div>
+              </div>
+              <div class="meta-sub">系统会在提交前检测标题、内容完整性、标签匹配度。</div>
+              <div class="list">
+                <a class="list-item" href="#">
+                  <div class="li-main">标题长度合规</div>
+                  <div class="li-sub">当前 16 字，建议范围 12~28 字</div>
+                </a>
+                <a class="list-item" href="#">
+                  <div class="li-main">正文结构完整</div>
+                  <div class="li-sub">包含方法步骤和示例，符合推荐规范</div>
+                </a>
+                <a class="list-item" href="#">
+                  <div class="li-main">标签数量略少</div>
+                  <div class="li-sub">建议增加 1~2 个长尾话题提升精准分发</div>
+                </a>
+                <a class="list-item" href="#">
+                  <div class="li-main">封面图未上传</div>
+                  <div class="li-sub">建议上传 1080x1440 封面提升点击率</div>
+                </a>
+              </div>
+            </article>
+          </section>
+
+          <section class="panel mt-12" aria-label="历史版本">
+            <div class="panel-title">历史版本</div>
+            <div class="list">
+              <a class="list-item" href="#">
+                <div class="li-main">v1.3 · 今天 10:08</div>
+                <div class="li-sub">新增示例题与错因分析段落</div>
+              </a>
+              <a class="list-item" href="#">
+                <div class="li-main">v1.2 · 今天 09:40</div>
+                <div class="li-sub">优化标题并补充学习路径图</div>
+              </a>
+              <a class="list-item" href="#">
+                <div class="li-main">v1.1 · 今天 09:12</div>
+                <div class="li-sub">初版正文，完成基础结构</div>
+              </a>
+            </div>
+          </section>
+
+          <section class="cards" aria-label="协作与发布">
+            <article class="card">
+              <div class="card-hd">
+                <div class="card-title">协作功能</div>
+                <div class="tags"><span class="tag ghost">团队创作</span></div>
+              </div>
+              <div class="feed-actions">
+                <a class="ghost-btn" href="#">邀请协作者</a>
+                <a class="ghost-btn" href="#">查看批注</a>
+                <a class="ghost-btn" href="#">对比版本</a>
+                <a class="ghost-btn" href="#">导出草稿</a>
+              </div>
+            </article>
+            <article class="card grid2">
+              <div class="mini-card">
+                <div class="mini-title">预览页面</div>
+                <div class="mini-sub">模拟用户端阅读体验</div>
+                <a class="mini-chip" href="./detail.html">进入预览</a>
+              </div>
+              <div class="mini-card alt">
+                <div class="mini-title">提交审核</div>
+                <div class="mini-sub">确认信息后进入审核流程</div>
+                <a class="mini-chip price" href="./ugc-review-status.html">立即提交</a>
+              </div>
+            </article>
+          </section>
+
+          <section class="panel mt-12" aria-label="编辑提醒">
+            <div class="panel-title">编辑提醒</div>
+            <div class="list">
+              <a class="list-item" href="#">
+                <div class="li-main">提交前建议进行 1 次预览与错字检查</div>
+                <div class="li-sub">保障阅读体验，减少审核来回修改</div>
+              </a>
+            </div>
+          </section>
+
+          <a class="cta wide mt-12" href="./ugc-review-status.html">提交审核</a>
+        </section>
+      </section>
+    </main>
+  </body>
+</html>

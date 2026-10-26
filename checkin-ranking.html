@@ -1,0 +1,202 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- 口语社交打卡排行榜页面 -->
+    <title>口语社交 - 打卡排行榜</title>
+    <link rel="stylesheet" href="./styles.css" />
+    <script src="./nav.js" defer></script>
+  </head>
+  <body>
+    <main class="stage">
+      <section class="phone" aria-label="打卡排行榜">
+        <header class="topbar">
+          <div class="status">
+            <div class="status-left">10:27</div>
+            <div class="status-right">
+              <span class="pill">5G</span>
+              <span class="pill">80%</span>
+            </div>
+          </div>
+          <div class="brand">
+            <a class="back-btn" href="./checkin.html" aria-label="返回打卡页">
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="none">
+                <path d="M15 6 9 12l6 6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+            </a>
+            <div class="brand-text">
+              <div class="brand-title">打卡排行榜</div>
+              <div class="brand-subtitle">我的排名、好友排名、平台总榜</div>
+            </div>
+            <button class="icon-btn" type="button" aria-label="榜单规则">
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="none">
+                <path d="M12 2 4 6v6c0 5.2 3.5 9.7 8 10.9 4.5-1.2 8-5.7 8-10.9V6l-8-4Z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round" />
+                <path d="M12 8v5m0 3h.01" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" />
+              </svg>
+            </button>
+          </div>
+          <nav class="tabs">
+            <a class="tab" href="./checkin.html">今日打卡</a>
+            <a class="tab active" href="./checkin-ranking.html">排行榜</a>
+            <a class="tab" href="./speaking-pk.html">PK 榜</a>
+          </nav>
+        </header>
+        <section class="content">
+          <article class="hero">
+            <div class="hero-bg"></div>
+            <div class="hero-body">
+              <div class="hero-title">你的本周排名：第 18 名</div>
+              <div class="hero-subtitle">连续打卡 13 天 · 周积分 980 · 距离前 10 仅差 120 分</div>
+              <a class="cta" href="./checkin.html">去完成任务加分</a>
+            </div>
+          </article>
+
+          <section class="panel" style="margin-top:12px;">
+            <div class="panel-title">榜单筛选</div>
+            <div class="chip-grid">
+              <a class="chip2 active" href="#">好友榜</a>
+              <a class="chip2" href="#">城市榜</a>
+              <a class="chip2" href="#">全国榜</a>
+              <a class="chip2" href="#">新人榜</a>
+              <a class="chip2" href="#">7 天</a>
+              <a class="chip2 active" href="#">30 天</a>
+            </div>
+          </section>
+
+          <section class="cards">
+            <article class="card">
+              <div class="card-hd">
+                <div class="card-title">好友排行榜 TOP 10</div>
+                <div class="tags">
+                  <span class="tag">实时更新</span>
+                  <span class="tag ghost">每小时</span>
+                </div>
+              </div>
+              <div class="list">
+                <div class="list-item"><div class="li-main">#1 Lena · 连续 31 天 · 1450 分</div><div class="li-sub">今日完成 4 项任务 · 发音均分 90</div></div>
+                <div class="list-item"><div class="li-main">#2 Ray · 连续 28 天 · 1370 分</div><div class="li-sub">今日完成 3 项任务 · 对话时长 35 分钟</div></div>
+                <div class="list-item"><div class="li-main">#3 Mika · 连续 25 天 · 1325 分</div><div class="li-sub">今日完成 3 项任务 · 错因复盘 2 次</div></div>
+                <div class="list-item"><div class="li-main">#4 Chris · 连续 19 天 · 1210 分</div><div class="li-sub">今日完成 2 项任务 · 跟读提升明显</div></div>
+                <div class="list-item"><div class="li-main">#5 我 · 连续 13 天 · 980 分</div><div class="li-sub">今日完成 1 项任务 · 还差 2 项可冲榜</div></div>
+                <div class="list-item"><div class="li-main">#6 Aki · 连续 12 天 · 950 分</div><div class="li-sub">今日完成 2 项任务 · 词汇增长快</div></div>
+                <div class="list-item"><div class="li-main">#7 Zoe · 连续 10 天 · 930 分</div><div class="li-sub">今日完成 2 项任务 · 语速控制稳定</div></div>
+                <div class="list-item"><div class="li-main">#8 Evan · 连续 9 天 · 905 分</div><div class="li-sub">今日完成 1 项任务 · 计划晚间补练</div></div>
+                <div class="list-item"><div class="li-main">#9 Nina · 连续 8 天 · 880 分</div><div class="li-sub">今日完成 1 项任务 · 新增表达 12 条</div></div>
+                <div class="list-item"><div class="li-main">#10 Hugo · 连续 7 天 · 860 分</div><div class="li-sub">今日完成 2 项任务 · 练习习惯稳定</div></div>
+              </div>
+            </article>
+
+            <article class="card">
+              <div class="card-hd">
+                <div class="card-title">我的冲榜路径</div>
+                <div class="tags">
+                  <span class="tag">可执行</span>
+                  <span class="tag ghost">今日</span>
+                </div>
+              </div>
+              <div class="list">
+                <div class="list-item">
+                  <div class="li-main">完成语伴对话 8 分钟</div>
+                  <div class="li-sub">+30 分，预计从第 18 升至第 15</div>
+                </div>
+                <div class="list-item">
+                  <div class="li-main">提交口语作业并通过 AI 批改</div>
+                  <div class="li-sub">+25 分，预计从第 15 升至第 13</div>
+                </div>
+                <div class="list-item">
+                  <div class="li-main">额外完成挑战题 1 组</div>
+                  <div class="li-sub">+20 分，预计从第 13 升至第 11</div>
+                </div>
+                <div class="list-item">
+                  <div class="li-main">连续打卡达 14 天奖励</div>
+                  <div class="li-sub">+15 分，预计冲入前 10</div>
+                </div>
+              </div>
+              <div class="feed-actions">
+                <a class="ghost-btn" href="./checkin.html">立即执行</a>
+                <a class="ghost-btn" href="./partner-chatroom.html">去语伴对话</a>
+                <a class="ghost-btn danger" href="#">稍后提醒</a>
+              </div>
+            </article>
+
+            <article class="card grid2">
+              <div class="mini-card">
+                <div class="mini-title">好友榜最高分</div>
+                <div class="mini-sub">1450 分 · Lena</div>
+                <div class="mini-chip">查看战报</div>
+              </div>
+              <div class="mini-card alt">
+                <div class="mini-title">我的周增分</div>
+                <div class="mini-sub">+210 分 · 本周已练 5 天</div>
+                <div class="mini-chip">继续冲刺</div>
+              </div>
+              <div class="mini-card">
+                <div class="mini-title">可超越目标</div>
+                <div class="mini-sub">当前第 14 名，差距 45 分</div>
+                <div class="mini-chip">制定计划</div>
+              </div>
+              <div class="mini-card alt">
+                <div class="mini-title">明日目标</div>
+                <div class="mini-sub">保持连胜并完成 3 项任务</div>
+                <div class="mini-chip">设置提醒</div>
+              </div>
+            </article>
+
+            <article class="card">
+              <div class="card-hd">
+                <div class="card-title">平台总榜摘要</div>
+                <div class="tags">
+                  <span class="tag">全国</span>
+                  <span class="tag ghost">Top 5</span>
+                </div>
+              </div>
+              <div class="list">
+                <div class="list-item">
+                  <div class="li-main">#1 Aurora · 3890 分 · 连续 102 天</div>
+                  <div class="li-sub">优势：超高完成率，日均练习 48 分钟</div>
+                </div>
+                <div class="list-item">
+                  <div class="li-main">#2 Leo · 3775 分 · 连续 97 天</div>
+                  <div class="li-sub">优势：作业提交稳定，老师批改通过率 100%</div>
+                </div>
+                <div class="list-item">
+                  <div class="li-main">#3 Maya · 3660 分 · 连续 95 天</div>
+                  <div class="li-sub">优势：语伴对话积极，互动加分高</div>
+                </div>
+                <div class="list-item">
+                  <div class="li-main">#4 Evan · 3580 分 · 连续 90 天</div>
+                  <div class="li-sub">优势：挑战任务完成度高，冲榜节奏稳定</div>
+                </div>
+                <div class="list-item">
+                  <div class="li-main">#5 Tina · 3495 分 · 连续 88 天</div>
+                  <div class="li-sub">优势：PK 参与率高，额外积分来源丰富</div>
+                </div>
+              </div>
+              <div class="feed-actions">
+                <a class="ghost-btn" href="#">查看完整榜单</a>
+                <a class="ghost-btn" href="#">订阅冲榜提醒</a>
+                <a class="ghost-btn danger" href="#">隐藏总榜</a>
+              </div>
+              <div class="callout">
+                冲榜提醒：每天完成“跟读 + 语伴 + 作业”三连任务，平均可新增 70-90 分。
+              </div>
+              <div class="feed-actions">
+                <a class="ghost-btn" href="./checkin.html">去做今日任务</a>
+                <a class="ghost-btn" href="./speaking-pk.html">去参加 PK 加分</a>
+                <a class="ghost-btn" href="./homework-submit.html">去提交作业</a>
+              </div>
+            </article>
+          </section>
+        </section>
+        <footer class="nav">
+          <a class="nav-item" href="./speaking-home.html"><span class="nav-ic"></span><span>练习</span></a>
+          <a class="nav-item" href="./partner-matching.html"><span class="nav-ic"></span><span>语伴</span></a>
+          <a class="nav-item active" href="./checkin-ranking.html"><span class="nav-ic"></span><span>榜单</span></a>
+          <a class="nav-item" href="./speaking-pk.html"><span class="nav-ic"></span><span>PK</span></a>
+          <a class="nav-item" href="./homework-submit.html"><span class="nav-ic"></span><span>作业</span></a>
+        </footer>
+      </section>
+    </main>
+  </body>
+</html>
